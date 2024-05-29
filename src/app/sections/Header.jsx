@@ -14,7 +14,7 @@ const Header = () => {
             <p className="text-xs text-black">Santiago</p>
           </div>
         </div>
-        <ul className="gap-10 text-black md:flex hidden hover:*:text-primary *:duration-200">
+        <ul className="flex flex-col md:flex-row gap-10 text-black hover:*:text-primary *:duration-200">
           <li>
             <a href="#home">Inicio</a>
           </li>

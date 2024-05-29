@@ -4,7 +4,7 @@ const Footer = () => {
       Santiago Obando &copy; 2024
       <ul className="flex-center gap-5 py-4 text-sm">
         <li>
-          <a href="#home">Sobre mi</a>
+          <a href="#home">Inicio</a>
         </li>
         <li>
           <a href="#about">Galeria</a>

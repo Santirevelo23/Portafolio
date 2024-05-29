@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Proyecto1 from './../../assets/images/peliculas.png';
 import Proyecto2 from './../../assets/images/Recetario.png';
 import Proyecto3 from './../../assets/images/TiendaOnline.png';
@@ -23,21 +23,23 @@ const Projects = () => {
   };
 
   return (
-    <section id='projects' className='container min-h-screen flex-center bg-personalBlue'>
-      <div className='text-center text-black'>
+    <section id='projects' className='container-fluid min-h-screen flex-center bg-personalBlue'>
+      <div className='text-center text-black w-full'>
         <h3>Proyectos</h3>
         <p className='px-2 mt-3'>
           Aquí puedes explorar y conocer algunos de mis trabajos, actividades y proyectos realizados a lo largo de mi carrera, los cuales me han permitido desarrollar todas mis habilidades y destrezas para el cumplimiento de mi objetivo es posicionarme como un excelente desarrollador de software.
         </p>
-        <div className='row row-cols-2 g-4 mt-5'>
+        <div className='row row-cols-1 row-cols-md-2 g-4 mt-5'>
           {projects.map((project) => (
-            <div key={project.id} className='col'>
+            <div key={project.id} className='col-md-6'>
               <div className='card'>
                 <img
                   src={project.image}
                   alt={project.title}
                   className='card-img-top'
                   onClick={() => handleImageClick(project)}
+                  title={project.description}
+                  style={{ cursor: 'pointer' }} // Establecer el cursor como un puntero
                 />
                 <div className='card-body'>
                   <h5 className='card-title'>{project.title}</h5>

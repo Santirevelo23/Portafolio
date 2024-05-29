@@ -23,7 +23,7 @@ const About = () => {
   };
 
   return (
-    <section id='about' className='container min-h-screen d-flex justify-content-center align-items-center flex-column bg-personalBlue'>
+    <section id='about' className='container-fluid min-h-screen d-flex justify-content-center align-items-center flex-column bg-personalBlue'>
       <div className='text-center text-black mt-10'>
         <h3>Galería <span role="img" aria-label="camera">📸</span></h3>
       </div>

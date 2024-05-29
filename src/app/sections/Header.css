@@ -1,30 +1,44 @@
-/* Header.css */
 
-/* Estilo para la clase bg-primary */
-.bg-primary {
-  background-color: #007bff; /* Ajusta este color según tus necesidades */
-}
+/* Estilos para versiones móviles */
+@media (max-width: 768px) {
+  nav {
+    padding: 0 10px; /* Reducir espaciado interno */
+  }
 
-/* Estilo para la clase size-10 */
-.size-10 {
-  width: 40px; /* Ajusta este tamaño según tus necesidades */
-  height: 40px; /* Ajusta este tamaño según tus necesidades */
-}
+  .nav-links {
+    display: none; /* Ocultar en pantallas pequeñas */
+  }
 
-/* Estilo para la clase flags */
-.flags {
-  width: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+  .menu-bar {
+    font-size: 28px; /* Tamaño de fuente */
+    color: #000000; /* Texto negro */
+  }
 
-/* Estilo para la clase flag */
-.flag {
-  width: 30px;
-}
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Ajusta según sea necesario */
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
 
-/* Otros estilos personalizados */
-.theme-switch i {
-  font-size: 1.25rem;
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block; /* Muestra el botón del menú */
+  }
+
+  .actions {
+    margin-top: 16px;
+  }
+
+  .theme-switch {
+    display: none;
+  }
+
+  .theme-switch-mobile {
+    display: inline-block;
+  }
 }
