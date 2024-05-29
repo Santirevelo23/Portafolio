@@ -1,0 +1,30 @@
+/* Header.css */
+
+/* Estilo para la clase bg-primary */
+.bg-primary {
+  background-color: #007bff; /* Ajusta este color según tus necesidades */
+}
+
+/* Estilo para la clase size-10 */
+.size-10 {
+  width: 40px; /* Ajusta este tamaño según tus necesidades */
+  height: 40px; /* Ajusta este tamaño según tus necesidades */
+}
+
+/* Estilo para la clase flags */
+.flags {
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilo para la clase flag */
+.flag {
+  width: 30px;
+}
+
+/* Otros estilos personalizados */
+.theme-switch i {
+  font-size: 1.25rem;
+}
