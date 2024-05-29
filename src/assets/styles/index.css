@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  src: url('./assets//Roboto/Roboto-Thin.ttf');
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('./assets/Roboto/Roboto-Light.ttf');
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('./assets/Roboto/Roboto-Regular.ttf');
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('./assets/Roboto/Roboto-Medium.ttf');
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face{
+  src: url('./assets/Roboto/Roboto-Bold.ttf');
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  src: url('./assets/Roboto/Roboto-Black.ttf');
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}
+
+.btn {
+  @apply px-3 py-2.5 shadow-xl z-10 inline-flex items-center gap-2 w-fit duration-300;
+}
+
+.btn-filled {
+  @apply rounded bg-primary border-2 border-primary text-white;
+}
+
+.btn-outline {
+  @apply border-2 border-gray-600 dark:text-gray-100  text-gray-600 shadow-xl leading-6 dark:bg-slate-800 bg-white  rounded-lg font-bold;
+}
+
+html {
+  @apply font-Oswald overflow-x-hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+section {
+  @apply py-7;
+}
+
+button:hover {
+  @apply scale-95 duration-200;
+}
+
+button,
+nav,
+p,
+address {
+  @apply font-Inter font-medium text-[0.87rem];
+}
+
+h3 {
+  @apply md:text-2xl text-xl;
+}
+a i {
+  @apply dark:bg-slate-800 bg-gray-100 p-2 rounded-full hover:!bg-primary hover:text-white duration-300;
+}
+
+button i {
+  @apply p-0;
+}
+
+input,
+textarea {
+  @apply border dark:border-gray-500 rounded placeholder:text-sm font-Poppins outline-none py-2 px-3 mb-4 resize-none bg-transparent;
+}
+
+
+
